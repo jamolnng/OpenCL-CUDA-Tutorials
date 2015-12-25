@@ -50,7 +50,7 @@ int main(int arg, char* args[])
 
 	//A source object for your program
 	cl::Program::Sources sources;
-	std::string kernel_code = readFile("../programs/simple_add.cl");
+	std::string kernel_code = readFile("simple_add.cl");
 	//Add your program source
 	sources.push_back({ kernel_code.c_str(),kernel_code.length() });
 
