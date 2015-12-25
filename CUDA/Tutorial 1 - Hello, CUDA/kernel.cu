@@ -16,6 +16,11 @@ int main(int arg, char* args[])
 	int B[] = { 0, 1, 2, 0, 1, 2, 0, 1, 2, 0 };
 	int C[size];
 
+	int *buffer_A = 0;
+	int *buffer_B = 0;
+	int *buffer_C = 0;
+	cudaError_t cudaStatus;
+
     // Choose which GPU to run on, change this on a multi-GPU system.
     cudaStatus = cudaSetDevice(0);
     if (cudaStatus != cudaSuccess)
@@ -23,11 +28,6 @@ int main(int arg, char* args[])
 		std::cout << "No CUDA devices found!" << std::endl;
 		exit(1);
     }
-
-	int *buffer_A = 0;
-    int *buffer_B = 0;
-    int *buffer_C = 0;
-    cudaError_t cudaStatus;
 
 	cudaDeviceProp prop;
 	cudaGetDeviceProperties(&prop, 0);
