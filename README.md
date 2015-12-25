@@ -1,5 +1,5 @@
 # OpenCL-CUDA-Tutorials
-Sources for OpenCL and CUDA tutorials at http://jlaning.com
+Sources for OpenCL and CUDA tutorials.
 
 This is as much a learning experience for me as it will be with you so bear with me. I try to comment my code and explain what I am doing to the best of my ability however I will not be getting too technical.
 
