@@ -19,13 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="lodepng.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bitmap.h" />
+    <None Include="cl_tutorial_2_copy.cl" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="block_blur.cl" />
+    <ClInclude Include="lodepng.h" />
+    <ClInclude Include="PNG.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D27A5344-59EA-4276-B828-B0768E8ECA82}</ProjectGuid>
