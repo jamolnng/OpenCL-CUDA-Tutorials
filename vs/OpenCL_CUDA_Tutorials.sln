@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial 1 - Hello, OpenCL"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial 1 - Hello, CUDA", "CUDA\Tutorial 1 - Hello, CUDA\Tutorial 1 - Hello, CUDA.vcxproj", "{35EF189C-6A3C-44A5-9EFE-40FC6C20AB8A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial 2 - OpenCL load image", "OpenCL\Tutorial 2 - OpenCL load image\Tutorial 2 - OpenCL load image.vcxproj", "{D27A5344-59EA-4276-B828-B0768E8ECA82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{35EF189C-6A3C-44A5-9EFE-40FC6C20AB8A}.Release|x64.Build.0 = Release|x64
 		{35EF189C-6A3C-44A5-9EFE-40FC6C20AB8A}.Release|x86.ActiveCfg = Release|Win32
 		{35EF189C-6A3C-44A5-9EFE-40FC6C20AB8A}.Release|x86.Build.0 = Release|Win32
+		{D27A5344-59EA-4276-B828-B0768E8ECA82}.Debug|x64.ActiveCfg = Debug|x64
+		{D27A5344-59EA-4276-B828-B0768E8ECA82}.Debug|x64.Build.0 = Debug|x64
+		{D27A5344-59EA-4276-B828-B0768E8ECA82}.Debug|x86.ActiveCfg = Debug|Win32
+		{D27A5344-59EA-4276-B828-B0768E8ECA82}.Debug|x86.Build.0 = Debug|Win32
+		{D27A5344-59EA-4276-B828-B0768E8ECA82}.Release|x64.ActiveCfg = Release|x64
+		{D27A5344-59EA-4276-B828-B0768E8ECA82}.Release|x64.Build.0 = Release|x64
+		{D27A5344-59EA-4276-B828-B0768E8ECA82}.Release|x86.ActiveCfg = Release|Win32
+		{D27A5344-59EA-4276-B828-B0768E8ECA82}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
