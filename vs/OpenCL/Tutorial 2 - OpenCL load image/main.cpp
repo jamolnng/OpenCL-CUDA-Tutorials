@@ -28,10 +28,10 @@ int main(int arg, char* args[])
 		exit(1);
 	}
 	std::vector<cl::Device> devices;
-	platforms[1].getDevices(CL_DEVICE_TYPE_ALL, &devices);
+	platforms[0].getDevices(CL_DEVICE_TYPE_ALL, &devices);
 	cl::Device device = devices[0];
 	std::cout << "Using device: " << device.getInfo<CL_DEVICE_NAME>() << std::endl;
-	std::cout << "Using platform: " << platforms[1].getInfo<CL_PLATFORM_NAME>() << std::endl;
+	std::cout << "Using platform: " << platforms[0].getInfo<CL_PLATFORM_NAME>() << std::endl;
 	cl::Context context(device);
 
 	//load our image
@@ -50,8 +50,6 @@ int main(int arg, char* args[])
 
 	//output image
 	cl::Image2D out(context, CL_MEM_WRITE_ONLY, format, w, h, 0, NULL);
-
-	//Set our arguements for the kernel
 
 	cl::Program::Sources sources;
 	std::string kernel_code = readFile("cl_tutorial_2_copy.cl");
@@ -97,6 +95,7 @@ int main(int arg, char* args[])
 
 	//temporary array to store the result from opencl
 	auto tmp = new unsigned char[w * h * 4];
+	//CL_TRUE means that it waits for the entire image to be copied before continuing
 	queue.enqueueReadImage(out, CL_TRUE, origin, size, 0, 0, tmp);
 
 	//copy the data from the temp array to the png

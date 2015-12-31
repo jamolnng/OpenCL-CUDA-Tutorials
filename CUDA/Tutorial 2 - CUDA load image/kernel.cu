@@ -13,7 +13,7 @@ __global__ void copy(const unsigned char* in, unsigned char* out)
 	int width = blockDim.x;
 	int index = (x + y * width) * 4;
 
-	//update each color channel
+	//copy each color channel
 	out[index] = in[index];
 	out[index + 1] = in[index + 1];
 	out[index + 2] = in[index + 2];
@@ -49,11 +49,11 @@ int main(int arg, char* args[])
 	cudaGetDeviceProperties(&prop, 0);
 	std::cout << "Using device: " << prop.name << std::endl;
 	
-    // Allocate GPU buffers for three vectors (two input, one output).
+    // Allocate GPU buffers for the images
 	cudaMalloc((void**)&in, size * sizeof(unsigned char));
 	cudaMalloc((void**)&out, size * sizeof(unsigned char));
 	
-    // Copy input vectors from host memory to GPU buffers.
+    // Copy image data from host memory to GPU buffers.
     cudaMemcpy(in, &inPng.data[0], size * sizeof(unsigned char), cudaMemcpyHostToDevice);
 
 	//free the input image because we do not need it anymore
