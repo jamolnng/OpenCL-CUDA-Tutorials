@@ -62,7 +62,7 @@ int main(int arg, char* args[])
 		exit(1);//Quit if your program doesn't compile
 	}
 
-	cl::CommandQueue queue(context, device, 0, NULL);
+	cl::CommandQueue queue(context, device, CL_QUEUE_PROFILING_ENABLE, NULL);
 
 	//Write our buffers that we are adding to our OpenCL device
 	queue.enqueueWriteBuffer(buffer_A, CL_TRUE, 0, sizeof(int) * size, A);
