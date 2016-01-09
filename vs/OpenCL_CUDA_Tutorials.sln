@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenCL", "OpenCL", "{6677E2
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial 3 - OpenCL basic image filtering", "OpenCL\Tutorial 3 - OpenCL basic image filtering\Tutorial 3 - OpenCL basic image filtering.vcxproj", "{2B217AC4-8B92-4F2F-BF7A-658D56EFC193}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial 3 - CUDA basic image filtering", "CUDA\Tutorial 3 - CUDA basic image filtering\Tutorial 3 - CUDA basic image filtering.vcxproj", "{20B93A00-1A20-46D6-8841-EB60A002EB08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -65,6 +67,14 @@ Global
 		{2B217AC4-8B92-4F2F-BF7A-658D56EFC193}.Release|x64.Build.0 = Release|x64
 		{2B217AC4-8B92-4F2F-BF7A-658D56EFC193}.Release|x86.ActiveCfg = Release|Win32
 		{2B217AC4-8B92-4F2F-BF7A-658D56EFC193}.Release|x86.Build.0 = Release|Win32
+		{20B93A00-1A20-46D6-8841-EB60A002EB08}.Debug|x64.ActiveCfg = Debug|x64
+		{20B93A00-1A20-46D6-8841-EB60A002EB08}.Debug|x64.Build.0 = Debug|x64
+		{20B93A00-1A20-46D6-8841-EB60A002EB08}.Debug|x86.ActiveCfg = Debug|Win32
+		{20B93A00-1A20-46D6-8841-EB60A002EB08}.Debug|x86.Build.0 = Debug|Win32
+		{20B93A00-1A20-46D6-8841-EB60A002EB08}.Release|x64.ActiveCfg = Release|x64
+		{20B93A00-1A20-46D6-8841-EB60A002EB08}.Release|x64.Build.0 = Release|x64
+		{20B93A00-1A20-46D6-8841-EB60A002EB08}.Release|x86.ActiveCfg = Release|Win32
+		{20B93A00-1A20-46D6-8841-EB60A002EB08}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +85,6 @@ Global
 		{D27A5344-59EA-4276-B828-B0768E8ECA82} = {6677E274-9760-4F0B-B5AD-6A9254FB02CA}
 		{365BEF91-40D2-4462-AE8C-8DBEFBB2DB3F} = {6A139FCC-9678-4A85-A12C-8C8E74B80EA5}
 		{2B217AC4-8B92-4F2F-BF7A-658D56EFC193} = {6677E274-9760-4F0B-B5AD-6A9254FB02CA}
+		{20B93A00-1A20-46D6-8841-EB60A002EB08} = {6A139FCC-9678-4A85-A12C-8C8E74B80EA5}
 	EndGlobalSection
 EndGlobal

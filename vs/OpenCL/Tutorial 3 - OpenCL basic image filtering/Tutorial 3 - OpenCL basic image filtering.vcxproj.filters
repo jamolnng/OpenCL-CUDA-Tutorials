@@ -4,6 +4,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cl_tutorial_3_boxFilter.cl" />
+    <Image Include="Lenna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="cl_tutorial_3_boxFilter.cl" />
   </ItemGroup>
 </Project>

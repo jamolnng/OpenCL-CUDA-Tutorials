@@ -6,4 +6,7 @@
   <ItemGroup>
     <None Include="cl_tutorial_2_copy.cl" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Lenna.png" />
+  </ItemGroup>
 </Project>

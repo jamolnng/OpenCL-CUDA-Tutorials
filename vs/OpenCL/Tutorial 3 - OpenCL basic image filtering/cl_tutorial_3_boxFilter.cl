@@ -8,16 +8,18 @@ void kernel boxFilter(__read_only image2d_t in, __write_only image2d_t out, cons
 
 	uint4 total = {0, 0, 0, 0};
 
-	int count = ((2 * halfBoxHeight) + 1) * ((2 * halfBoxWidth) + 1);
+	int count = 0;
 
 	for(int i = -halfBoxWidth; i <= halfBoxWidth; i++)
 	{
 		for(int j = -halfBoxHeight; j <= halfBoxHeight; j++)
 		{
 			int2 coord = pos + (int2)(i, j);
-			if(coord.x < 0) coord.x += imageWidth;
-			if(coord.x < 0) coord.y += imageWidth;
-			total += read_imageui(in, smp, pos + (int2)(i, j));
+			if(coord.x >= 0 && coord.y >= 0 && coord.x < imageWidth && coord.y < imageHeight)
+			{
+				total += read_imageui(in, smp, pos + (int2)(i, j));
+				count++;
+			}
 		}
 	}
 	write_imageui(out, pos, total / count);
